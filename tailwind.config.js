@@ -1,11 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}","./node_modules/flowbite/**/*.js"],
+  content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-orange': '#E0672E',
+        'dark-blue' : '#294b9b'
+      },
+      backgroundImage: {
+        'plumbing-home': "url('/public/images/plumbing-home.jpg')",
+        'plumbing': "url('/public/images/PLUMBING.jpg')",
+        'requestQuote': "url('/public/images/p5.jpg')",
+      },
+    },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+  plugins: [],
 }
-
